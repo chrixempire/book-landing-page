@@ -38,7 +38,7 @@ body{
     border: none;
     width:75px;
     height: 25px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .login:hover{
     border: 2px solid red;
@@ -103,15 +103,14 @@ body{
 
 
 .tab img{
-    width: 450px;
+    width: 600px;
     z-index: 1;
     margin-right: 150px;
     position: relative;
 }
 .tab{
 
-    position: relative;
-    width: 40%;
+     width: 40%;
 }
 .blue{
     height: 150px;

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Rubik:wght@400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.logo{
+    height: 25px;
+}
+#top{
+   width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    padding-right: 50px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.links a:hover{
+    color: red;
+}
+.login{
+    background-color: transparent;
+    border: none;
+    width:75px;
+    height: 25px;
+    font-size: 12px;
+}
+.login:hover{
+    border: 2px solid red;
+    border-radius: 3px;
+    cursor: progress;
+}
+.nav{
+    display: none;
+}
+.first{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+ 
+}
+#simple{
+    width: 40%;
+    margin-left: 100px;
+    
+}
+.simp-h2{
+    width: 50%;
+}
+.simp-h2 h2{
+    font-size: 30px;
+}
+.cleaner{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.cleaner p{
+    font-size: 15px;
+}
+.chrome{
+    font-size: 11px;
+    width: 100px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px;
+}
+.fire{
+    font-size: 11px;
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px;
+}
+.chrome:hover {
+    cursor: pointer;
+    color: blue;
+    border: 1px solid blue;
+}
+.fire:hover{
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+}
+
+
+.tab img{
+    width: 450px;
+    z-index: 1;
+    margin-right: 150px;
+    position: relative;
+}
+.tab{
+
+    position: relative;
+    width: 40%;
+}
+.blue{
+    height: 150px;
+    width: 500px;
+    background-color: blue;
+    border-bottom-left-radius: 50%;
+    z-index: 4;
+    margin-top: -130px;
+    margin-left: 180px;
+
+    
+}
+
+
+
+
+@media screen and (max-width : 900px) {
+    #top{
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 70px 0px 50px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px;
+        width: 50%;
+    } 
+    .links a{
+        text-decoration: none;
+        font-size: 15px;
+    } 
+    .first{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+     
+    }  
+    #simple{
+        width: 40%;
+        margin-left: 100px;
+        
+    }
+    .tab{
+        position: relative;
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width : 500px){
+    .links{
+        display: none;
+    }
+    #top{
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 30px 0px 30px;
+    }
+    .navbar{
+        background-color: transparent;
+        border: none;
+        display: inline;
+        position: relative;
+        
+    }
+    .nav-img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav{
+        display: block;
+    }
+    .dropdown-con{
+        display: none;
+        position: absolute;
+        background-color:hsl(231, 69%, 60%);
+        min-width: 50px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(32, 1, 1, 0.2);
+        margin-top: 1px solid red;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 100px;
+        z-index: 1;
+        text-align: center;
+      }
+      .dropdown-con a:hover, .dropdown-con a:focus{
+        background-color: rgba(128, 128, 128,0.2);
+      }
+      .dropdown-con a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+        margin: auto;
+      }
+      .nav-but{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        margin: auto;
+
+      }
+
+      hr{
+          border: 2px solid grey;
+      }
+
+      .navbar:focus + .dropdown-con{
+          display: block;
+      }
+}
